@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        <input v-model="test" type="text">
+        <h3 v-text="test"></h3>
+    </div>
+    <form>
+        <input type="text">
+    </form>
+    <form>
+        <input type="text">
+        <input type="text">
+    </form>
+    <form>
+        <input type="text"><input type="submit">
+    </form>
+    <form>
+            <input type="text"><input type="image">
+        </form>
+    <form>
+        <input type="text">
+        <input type="text">
+        <button>sure</button>
+    </form>
+    <form>
+        <input type="text">
+        <input type="text">
+        <button type="submit">sure</button>
+    </form>
+    <form>
+        <input type="text">
+
+        <button type="button">sure</button>
+    </form>
+    <script src="./observer.js"></script>
+    <script src="./watcher.js"></script>
+    <script src="./compiler.js"></script>
+    <script src="./mvvm.js"></script>
+    <script>
+        var vm = new MVVM({
+            el: '#demo',
+            data: {
+                test: '3'
+            }
+        })
+    </script>
+</body>
+
+</html>
